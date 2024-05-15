@@ -9,43 +9,53 @@ class NumbersPage extends StatelessWidget {
     Number(
         image: 'assets/images/numbers/number_one.png',
         jpName: 'ichi',
-        enName: 'one'),
+        enName: 'one',
+        sound: 'sounds/numbers/number_one_sound.mp3'),
     Number(
         image: 'assets/images/numbers/number_two.png',
         jpName: 'Ni',
-        enName: 'two'),
+        enName: 'two',
+        sound: 'sounds/numbers/number_two_sound.mp3'),
     Number(
         image: 'assets/images/numbers/number_three.png',
         jpName: 'San',
-        enName: 'three'),
+        enName: 'three',
+        sound: 'sounds/numbers/number_three_sound.mp3'),
     Number(
         image: 'assets/images/numbers/number_four.png',
         jpName: 'Shi',
-        enName: 'four'),
+        enName: 'four',
+        sound: 'sounds/numbers/number_four_sound.mp3'),
     Number(
         image: 'assets/images/numbers/number_five.png',
         jpName: 'Go',
-        enName: 'five'),
+        enName: 'five',
+        sound: 'sounds/numbers/number_five_sound.mp3'),
     Number(
         image: 'assets/images/numbers/number_six.png',
         jpName: 'Roku',
-        enName: 'six'),
+        enName: 'six',
+        sound: 'sounds/numbers/number_six_sound.mp3'),
     Number(
         image: 'assets/images/numbers/number_seven.png',
         jpName: 'sebun',
-        enName: 'seven'),
+        enName: 'seven',
+        sound: 'sounds/numbers/number_seven_sound.mp3'),
     Number(
         image: 'assets/images/numbers/number_eight.png',
         jpName: 'hachi',
-        enName: 'eight'),
+        enName: 'eight',
+        sound: 'sounds/numbers/number_eight_sound.mp3'),
     Number(
         image: 'assets/images/numbers/number_nine.png',
-        jpName: 'hachi',
-        enName: 'nine'),
+        jpName: 'Kyū',
+        enName: 'nine',
+        sound: 'sounds/numbers/number_nine_sound.mp3'),
     Number(
         image: 'assets/images/numbers/number_ten.png',
-        jpName: 'hachi',
-        enName: 'ten')
+        jpName: 'Jū',
+        enName: 'ten',
+        sound: 'sounds/numbers/number_ten_sound.mp3')
   ];
 
   @override
