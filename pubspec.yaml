@@ -23,5 +23,6 @@ flutter:
     - assets/images/colors/
     - assets/images/family_members/
     - assets/sounds/numbers/
+    - assets/sounds/family_members/
     
     

@@ -1,17 +1,17 @@
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
-import 'package:toku_app/models/number.dart';
+import 'package:toku_app/models/item_model.dart';
 
 class Item extends StatelessWidget {
-  const Item({super.key, required this.number});
-  final Number number;
-
+  const Item({super.key, required this.itemObj, required this.color});
+  final ItemModel itemObj;
+  final Color color;
   @override
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(16),
-        color: Colors.amber,
+        color: color,
       ),
       margin: const EdgeInsets.only(left: 16, top: 16, right: 16),
       height: 100,
@@ -22,19 +22,19 @@ class Item extends StatelessWidget {
                 borderRadius: BorderRadius.circular(16),
                 color: const Color(0xFFEFF1F3),
               ),
-              child: Image.asset(number.image)),
+              child: Image.asset(itemObj.image)),
           Padding(
             padding: const EdgeInsets.only(left: 16),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  number.jpName,
+                  itemObj.jpName,
                   style:
                       const TextStyle(color: Color(0xFF223843), fontSize: 16),
                 ),
                 Text(
-                  number.enName,
+                  itemObj.enName,
                   style:
                       const TextStyle(color: Color(0xFF223843), fontSize: 16),
                 )
@@ -49,7 +49,7 @@ class Item extends StatelessWidget {
             child: IconButton(
                 onPressed: () async {
                   final player = AudioPlayer();
-                  await player.play(AssetSource(number.sound));
+                  await player.play(AssetSource(itemObj.sound));
                 },
                 icon: const Icon(
                   Icons.play_circle,
