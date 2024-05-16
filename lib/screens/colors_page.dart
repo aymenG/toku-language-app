@@ -46,16 +46,6 @@ class ColorsPage extends StatelessWidget {
         jpName: 'Hokori ppoi kiiro',
         enName: 'dusty yellow',
         sound: 'sounds/colors/dusty_yellow.wav'),
-    ItemModel(
-        image: 'assets/images/colors/yellow.png',
-        jpName: 'Musuko',
-        enName: 'son',
-        sound: 'sounds/colors/red.wav'),
-    ItemModel(
-        image: 'assets/images/colors/color_brown.png',
-        jpName: 'Musume',
-        enName: 'daughter',
-        sound: 'sounds/colors/brown.wav')
   ];
 
   @override
@@ -74,7 +64,7 @@ class ColorsPage extends StatelessWidget {
         itemBuilder: (context, index) {
           return Item(
             itemObj: colors[index],
-            color: const Color(0xFFD8B4A0),
+            color: Colors.amber,
           );
         },
       ),

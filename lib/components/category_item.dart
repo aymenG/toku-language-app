@@ -22,7 +22,7 @@ class CategoryItem extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             Opacity(
-              opacity: 0.4,
+              opacity: 0.5,
               child: Icon(
                 icon,
                 size: 80,

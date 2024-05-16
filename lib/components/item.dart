@@ -6,6 +6,7 @@ class Item extends StatelessWidget {
   const Item({super.key, required this.itemObj, required this.color});
   final ItemModel itemObj;
   final Color color;
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -20,7 +21,7 @@ class Item extends StatelessWidget {
           Container(
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(16),
-                color: const Color(0xFFEFF1F3),
+                //color: const Color(0xFFEFF1F3),
               ),
               child: Image.asset(itemObj.image)),
           Padding(
@@ -31,12 +32,12 @@ class Item extends StatelessWidget {
                 Text(
                   itemObj.jpName,
                   style:
-                      const TextStyle(color: Color(0xFF223843), fontSize: 16),
+                      const TextStyle(color: Color(0xFF223843), fontSize: 18),
                 ),
                 Text(
                   itemObj.enName,
                   style:
-                      const TextStyle(color: Color(0xFF223843), fontSize: 16),
+                      const TextStyle(color: Color(0xFF223843), fontSize: 18),
                 )
               ],
             ),
