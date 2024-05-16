@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 
 class CategoryItem extends StatelessWidget {
-  CategoryItem({super.key, this.text, this.color, this.onTap});
+  CategoryItem({super.key, this.text, this.color, this.icon, this.onTap});
   String? text;
   Color? color;
+  IconData? icon;
   Function()? onTap;
 
   @override
@@ -11,14 +12,27 @@ class CategoryItem extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: Container(
-        padding: const EdgeInsets.only(left: 24),
-        alignment: Alignment.centerLeft,
-        height: 64,
-        width: double.infinity,
-        color: color,
-        child: Text(
-          '$text',
-          style: const TextStyle(fontSize: 18),
+        padding: const EdgeInsets.all(16),
+        //alignment: Alignment.center,
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(16),
+          color: color,
+        ),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            Opacity(
+              opacity: 0.4,
+              child: Icon(
+                icon,
+                size: 80,
+              ),
+            ),
+            Text(
+              '$text',
+              style: const TextStyle(fontSize: 20),
+            ),
+          ],
         ),
       ),
     );
