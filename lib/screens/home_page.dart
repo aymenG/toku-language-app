@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:toku_app/screens/family_members_page.dart';
 import 'package:toku_app/screens/numbers_page.dart';
+import 'package:toku_app/screens/phrases_page.dart';
 
 import '../components/category_item.dart';
 import 'colors_page.dart';
@@ -11,7 +12,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFF223843),
+      backgroundColor: const Color(0xFF223843),
       appBar: AppBar(
         title: const Text(
           'Language App',
@@ -62,7 +63,11 @@ class HomePage extends StatelessWidget {
               icon: Icons.abc,
               text: 'Phrases',
               color: const Color(0xFFD77A61),
-              onTap: () {},
+              onTap: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) {
+                  return const PhrasesPage();
+                }));
+              },
             )
           ],
         ),

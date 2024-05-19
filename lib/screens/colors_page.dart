@@ -64,7 +64,7 @@ class ColorsPage extends StatelessWidget {
         itemBuilder: (context, index) {
           return Item(
             itemObj: colors[index],
-            color: Colors.amber,
+            color: const Color.fromARGB(255, 202, 171, 81),
           );
         },
       ),

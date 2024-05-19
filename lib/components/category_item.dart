@@ -13,7 +13,6 @@ class CategoryItem extends StatelessWidget {
       onTap: onTap,
       child: Container(
         padding: const EdgeInsets.all(16),
-        //alignment: Alignment.center,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(16),
           color: color,

@@ -13,6 +13,7 @@ class TokuApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
+      title: "Toku",
       home: HomePage(),
     );
   }
